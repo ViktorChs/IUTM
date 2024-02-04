@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Biblio2.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Biblioteca Virtual IUTM</title>
+  </head>
+  <body>
+    <aside>
+      <div class="sidebar close">
+        <div class="logo-details">
+          <img src="/Blioteca-de-IUTM/assets/Logo.png" alt="">
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="/index2.html">
+              <i class="bx bx-grid-alt"></i>
+              <span class="link_name">Inicio</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Inicio</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-pie-chart-alt-2"></i>
+              <span class="link_name">Nosotros</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Nosotros</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-line-chart"></i>
+              <span class="link_name">Contacto</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Contacto</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-compass"></i>
+              <span class="link_name">Pedidos</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Pedidos</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/biblio.html">
+              <i class="bx bx-history"></i>
+              <span class="link_name">Biblioteca</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Biblioteca</a></li>
+            </ul>
+          </li>
+         <a href="#">
+          <img class="bx bx-menu" src="/Blioteca-de-IUTM/assets/menu.png" alt="">            
+        </a>
+      </li>
+        </ul>
+      </div>
+
+
+      
+    </aside>
+    <main>
+      <header>
+        
+              <h1 id="top" >Libreria</h1>
+<!--<input type="search" name="Buscardor" placeholder="Buscador" id="">-->
+
+      </header>
+      <div class="contenedor_books content_books"></div>
+      <div id="pagination"></div>
+    </main>
+    <nav class="nav_menu-view-book"></nav>
+    <button onclick="toggleMenuFilters11()" class="center  bts-close-menu">
+      <div></div>
+    </button>
+   <!-- <button class="bts-close-menu"><img src="/Blioteca-de-IUTM/assets/menu2.svg" alt="iconmenu"></button>-->
+    <div class="menu">
+      <pinture class="filterlogo">
+        <img class="nav_bar-Img-Logo" src="/Blioteca-de-IUTM/assets/Logo.png"alt=""/>
+      </pinture>
+      <div class="CountAll"></div>
+      <button class="resetfilter" onclick="resetAllFilter()">Quitar todos los filtros</button>
+      <div class="checklist">
+
+        <h2 id="checklist-Formato">Formato</h2>
+        <ul id="checklist-items-formato" class="fade-out">
+          <li>
+            <input type="checkbox" id="Formato1" value="libro" data-key="libro" />
+            <label for="Formato1">Libro</label>
+          </li>
+          <li>
+            <input type="checkbox" id="Formato2" value="revista" data-key="revista" />
+            <label for="Formato2">Revista</label>
+          </li>
+        </ul>
+      </div>
+      <div class="checklist">
+        <h2 id="checklist-pnf">Pnf</h2>
+        <ul id="checklist-items-pnf" class="fade-out">
+          <li>
+            <input
+              type="checkbox"
+              id="Administracion"
+              value="Administracion"
+              data-key="Administracion"
+            /><label for="Administracion">Administracion</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="Agroalimentacion"
+              value="Agroalimentacion"
+              data-key="Agroalimentacion"
+            /><label for="Agroalimentacion">Agroalimentacion</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="Contaduria publica"
+              value="Contaduria publica"
+              data-key="Contaduria"
+            /><label for="Contaduria publica">Contaduria publica</label>
+          </li>
+          <li>
+            <input 
+            type="checkbox" 
+            id="Informatica"
+            value="Informatica" 
+            data-key="Informatica"
+
+            /><label
+            for="Informatica"
+              >Informatica</label
+            >
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="Medicina veterinaria"
+              value="Medicina veterinaria"
+              data-key="veterinaria"
+            /><label for="Medicina veterinaria">Medicina veterinaria</label>
+          </li>
+        </ul>
+      </div>
+      <div class="checklist">
+        <h2 id="checklist-materia">Materia</h2>
+        <ul id="checklist-items-materia" class="fade-out">
+          <li>
+            <input type="checkbox" id="Matematica" value="Matematica" data-key="Matematica"/><label
+              for="Matematica"
+              >Matematica</label
+            >
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="Programacion"
+              value="Programacion"
+              data-key="Programacion"
+            /><label for="Programacion">Programacion</label>
+          </li>
+          <li>
+            <input type="checkbox" id="Proyecto" value="Proyecto" data-key="Proyecto" /><label
+              for="Proyecto"
+              >Proyecto</label
+            >
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="Sociocritica"
+              value="Sociocritica"
+              data-key="Sociocritica"
+            /><label for="Sociocritica">Sociocritica</label>
+          </li>
+          <!--<li>
+            <input type="checkbox" id="tarea5" value="" /><label for=""
+              >Tarea 5</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="tarea6" value="" /><label for=""
+              >Tarea 6</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="tarea7" value="" /><label for=""
+              >Tarea 7</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="tarea8" value="" /><label for=""
+              >Tarea 8</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="tarea9" value="" /><label for=""
+              >Tarea 9</label
+            >
+          </li>
+          <li>
+            <input type="checkbox" id="tarea10" value="" /><label for=""
+              >Tarea 10</label
+            >
+          </li>-->
+        </ul>
+      </div>
+    </div>
+    <div id="print1"></div>
+    <div id="viewmenubook"></div>
+    <nav class="nav_menu-view-book"></nav>
+  </body>
+  <script>
+    /* */
+const btnCloseFilterMenu = document.querySelector('.bts-close-menu')
+const menu = document.querySelector('.menu')
+btnCloseFilterMenu.addEventListener('click', () => {test()}
+
+)
+function A() {
+  menu.classList.toggle("openfilter")
+}
+
+
+btnCloseFilterMenu.addEventListener('click', () =>{
+A()
+ 
+})
+function test() {
+  console.log("♫")
+}
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+      arrow[i].addEventListener("click", (e) => {
+        let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+        arrowParent.classList.toggle("showMenu");
+      });
+    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn);
+    sidebarBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    });
+    
+  </script>
+  <script src="/Blioteca-de-IUTM/Libros.js"></script>
+  <script src="/Blioteca-de-IUTM/js.js"></script>
+  <script src="/renderBooks.js"></script>
+  <!--<script src="/Blioteca-de-IUTM/Libros.js"></script>
+  <script src="/Blioteca-de-IUTM/books.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+</html>

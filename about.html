@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Blioteca-de-IUTM/BiblioStyle.css" />
+    
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav_bar">
+        <div  class="contentedorsegundario">
+          <a href="javascript:location.reload()"
+            ><img
+              class="nav_bar-Img-Logo"
+              src="/Blioteca-de-IUTM/assets/Logo.png"
+              alt="logo"
+          /></a>
+          <div class="btsnavbar">
+            <a href="#home" onclick="timeouttoggle()"><span>Inicio</span></a>
+            <a href="#about" onclick=""><span>Nosotros</span></a>
+            <a href="#new"><span>Nuevos</span></a>
+            <a onclick=""><span>Contacto</span></a>
+            <a onclick=""><span>Pedidos</span></a>
+            <a onclick="openbiblioteca()"><span>Biblioteca</span></a>
+          </div>
+          <button class="burger etc" onclick="toggleMenuf()">
+            <img src="/Blioteca-de-IUTM/assets/menu.png" />
+          </button>
+          <div class="blockcontentmenuopen"></div>
+          <div class="menu">
+            <a><img class="nav_bar-Img-Logo" link="" src="/Blioteca-de-IUTM/assets/Logo.png" alt="" /></a>
+        
+            <div class="checklist">
+              <h2 id="checklist-Formato">Formato</h2>
+              <h2 id="checklist-Formato">Formato</h2>
+              <h2 id="checklist-Formato">Formato</h2>
+              <h2 id="checklist-Formato">Formato</h2>
+              <h2 id="checklist-Formato">Formato</h2>
+              <h2 id="checklist-Formato">Formato</h2>
+            </div>
+            </div>
+        
+        </div>
+      </nav>
+    <section class="section_3">
+        <div class="blockcontentmenuopen"></div>
+  
+        <div class="menu">
+          <a><img class="nav_bar-Img-Logo" link="" src="Logo.png" alt="" /></a>
+  
+          <div class="checklist">
+            <h2 id="checklist-Formato">Formato</h2>
+            <ul id="checklist-items-formato" class="fade-out">
+              <li>
+                <input type="checkbox" id="Formato1" value="Libro" />
+                <label for="Formato1">Libro</label>
+              </li>
+              <li>
+                <input type="checkbox" id="Formato2" value="Revista" />
+                <label for="Formato2">Revista</label>
+              </li>
+            </ul>
+          </div>
+          <div class="checklist">
+            <h2 id="checklist-pnf">pnf</h2>
+            <ul id="checklist-items-pnf" class="fade-out">
+              <li>
+                <input
+                  type="checkbox"
+                  id="Administracion"
+                  value="Administracion"
+                /><label for="Administracion">Administracion</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="Agroalimentacion"
+                  value="Agroalimentacion"
+                /><label for="Agroalimentacion">Agroalimentacion</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="Contaduria publica"
+                  value="Contaduria publica"
+                /><label for="Contaduria publica">Contaduria publica</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="Informatica"
+                  value="Informatica"
+                /><label for="Informatica">Informatica</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="Medicina veterinaria"
+                  value="Medicina veterinaria"
+                /><label for="Medicina veterinaria">Medicina veterinaria</label>
+              </li>
+            </ul>
+          </div>
+          <div class="checklist">
+            <h2 id="checklist-materia">Materia</h2>
+            <ul id="checklist-items-materia" class="fade-out">
+              <li>
+                <input type="checkbox" id="Matematica" value="Matematica" /><label
+                  for="Matematica"
+                  >Matematica</label
+                >
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="Programacion"
+                  value="Programacion"
+                /><label for="Programacion">Programacion</label>
+              </li>
+              <li>
+                <input type="checkbox" id="Proyecto" value="Proyecto" /><label
+                  for="Proyecto"
+                  >Proyecto</label
+                >
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="Sociocritica"
+                  value="Sociocritica"
+                /><label for="Sociocritica">Sociocritica</label>
+              </li>
+              <li>
+                <input type="checkbox" id="tarea5" value="" /><label for=""
+                  >Tarea 5</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="tarea6" value="" /><label for=""
+                  >Tarea 6</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="tarea7" value="" /><label for=""
+                  >Tarea 7</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="tarea8" value="" /><label for=""
+                  >Tarea 8</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="tarea9" value="" /><label for=""
+                  >Tarea 9</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="tarea10" value="" /><label for=""
+                  >Tarea 10</label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="print1"></div>
+        <div id="pagination"></div>
+        <div class="content_books"></div>
+        <nav class="nav_menu-view-book"></nav>
+      </section>
+    
+</body>
+<script src="Libros.js"></script>
+  <script src="js.js"></script>
+  <script src="books.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</html>
