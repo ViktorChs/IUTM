@@ -39,5 +39,15 @@ let bookArchive = [
     img: "calculo2.PNG",
     link: "https://drive.google.com/file/d/1Sa3kPM7xgZ8GBbUhDt67k_ozSyK2jIS3/view?usp=sharing",
   },
+  {
+    id: 5,
+    formato: "Libro",
+    pnf: "Informatica",
+    materia: "Matematica",
+    nombre: "Geometria Primera edicion",
+    desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas. No pretendemos ofreceruna mirada original ni fundacional sobre estos saberes, solo aspiramos a participar y tomar posición frente a algunas de las reflexiones y debates que transitan por las aulas",
+    img: "geometria.PNG",
+    link: "https://drive.google.com/file/d/1V1uNH3ji-mVyX_a5N-D87755U0A5d_Nl/view?usp=sharing",
+  },
  
 ];
