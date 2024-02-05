@@ -26,7 +26,7 @@ let bookArchive = [
     materia: "Matematica",
     nombre: "CalculoI",
     desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas. No pretendemos ofreceruna mirada original ni fundacional sobre estos saberes, solo aspiramos a participar y tomar posición frente a algunas de las reflexiones y debates que transitan por las aulas",
-    img: "/Blioteca-de-IUTM/imgbooks/calculo2.PNG",
+    img: "calculo2.PNG",
     link: "https://drive.google.com/file/d/19vsszaXoloS7xIfQgjI7x97qUOdrAMvw/view?usp=sharing",
   },
  
