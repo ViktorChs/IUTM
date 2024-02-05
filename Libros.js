@@ -11,13 +11,23 @@ let bookArchive = [
   },
   {
     id: 2,
-    formato: "revista",
+    formato: "Libro",
     pnf: "Informatica",
     materia: "Matematica",
     nombre: "Metodología de investigación 4 edicion",
     desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas. No pretendemos ofreceruna mirada original ni fundacional sobre estos saberes, solo aspiramos a participar y tomar posición frente a algunas de las reflexiones y debates que transitan por las aulas",
     img: "/Blioteca-de-IUTM/imgbooks/metodologia_de_la_investigacion_4.PNG",
     link: "https://drive.google.com/file/d/1ag9qWOdxXLB5aMz8MK6Gs7u8w-tCmk0w/view?usp=sharing",
+  },
+  {
+    id: 3,
+    formato: "Libro",
+    pnf: "Informatica",
+    materia: "Matematica",
+    nombre: "CalculoI",
+    desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas. No pretendemos ofreceruna mirada original ni fundacional sobre estos saberes, solo aspiramos a participar y tomar posición frente a algunas de las reflexiones y debates que transitan por las aulas",
+    img: "/Blioteca-de-IUTM/imgbooks/calculo2.PNG",
+    link: "https://drive.google.com/file/d/19vsszaXoloS7xIfQgjI7x97qUOdrAMvw/view?usp=sharing",
   },
  
 ];
